@@ -1,0 +1,41 @@
+/* Custom styles for the sign-up page */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+.card {
+    border: 0;
+    border-radius: 1rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Red border for fields that fail validation */
+.form-control.is-invalid,
+.form-check-input.is-invalid {
+    border: 2px solid #dc3545;
+}
+
+.form-control.is-valid {
+    border-color: #198754;
+}
+
+.json-output {
+    background: #212529;
+    color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 24rem;
+    overflow-y: auto;
+}
